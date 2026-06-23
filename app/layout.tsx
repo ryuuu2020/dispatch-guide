@@ -1,28 +1,11 @@
 import type { Metadata } from "next";
-import { Bangers, Inter, JetBrains_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { SITE_TITLE, SITE_DESCRIPTION, SITE_URL } from "@/lib/data";
 
-const bangers = Bangers({
-  weight: "400",
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-heading",
-});
-
-const inter = Inter({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-body",
-});
-
-const jetbrainsMono = JetBrains_Mono({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-mono",
-});
+const GA_ID = "G-38YD9KRS92";
 
 export const metadata: Metadata = {
   title: {
@@ -41,8 +24,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${bangers.variable} ${inter.variable} ${jetbrainsMono.variable}`}>
+    <html lang="en" className="font-heading-bangers font-body-inter font-mono-jetbrains">
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -62,6 +48,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+        <Script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} />
+        <Script
+          id="ga-init"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${GA_ID}');
+            `,
+          }}
+        />
       </body>
     </html>
   );
