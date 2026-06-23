@@ -361,6 +361,53 @@ export default function NewsPage() {
 </section>
 
 
+      {/* ====== Article 4: Episode Guide ====== */}
+<hr className="my-12 border-border max-w-3xl" />
+
+<div className="text-xs text-text-muted font-mono mb-2">2026-06-25</div>
+<h2 className="text-2xl sm:text-3xl font-extrabold mb-2">
+  Episode 1-3 <span className="text-accent">Walkthrough</span>: Key Choices
+</h2>
+<p className="text-text-secondary mb-8 max-w-2xl">
+  The first three episodes set up your entire playthrough. Make the wrong call early and you&apos;ll limp through the rest of the game. Here&apos;s the optimal path.
+</p>
+
+<section className="p-6 rounded-xl border border-border bg-bg-card mb-4">
+  <h3 className="text-lg font-bold mb-2">
+    <span className="text-accent">Episode 1</span> — The Sardine Can
+  </h3>
+  <p className="text-text-secondary">
+    Deploy Invisigal first. Her stealth recon gives you intel on all three encounter types before
+    committing your team. The tutorial suggests Blonde Blazer — <strong className="text-text-primary">ignore it.</strong>
+    Blonde Blazer is a generalist who does nothing well early game. Save her for Episode 4+.
+  </p>
+</section>
+
+<section className="p-6 rounded-xl border border-border bg-bg-card mb-4">
+  <h3 className="text-lg font-bold mb-2">
+    <span className="text-accent">Episode 2</span> — First Real Fight
+  </h3>
+  <p className="text-text-secondary">
+    Pair Flambae with any teammate — her Fire Zone clears the mob waves single-handedly. Avoid
+    sending Sonar solo: she has no damage output at this level and will burn through your revival
+    charges. <strong className="text-text-primary">Pick up the side objective in the warehouse</strong> — it unlocks
+    a permanent +1 Mobility for your deployed hero.
+  </p>
+</section>
+
+<section className="p-6 rounded-xl border border-border bg-bg-card mb-4">
+  <h3 className="text-lg font-bold mb-2">
+    <span className="text-accent">Episode 3</span> — The Fork
+  </h3>
+  <p className="text-text-secondary">
+    Your first major narrative choice. <strong className="text-text-primary">Side with Phenomaman.</strong> This gives
+    you permanent +2 Vigor for all heroes and unlocks her Taunt ability early. The alternative
+    (siding with Malevola) gives a temporary damage boost that expires after Episode 5. Long-term
+    stat gains &gt; short-term buffs.
+  </p>
+</section>
+
+
       {/* CTA */}
       <div className="mt-12 p-6 rounded-xl border border-accent/20 bg-accent/5 max-w-3xl">
         <p className="text-sm text-text-muted">
