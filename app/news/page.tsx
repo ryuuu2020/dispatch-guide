@@ -408,6 +408,42 @@ export default function NewsPage() {
 </section>
 
 
+      {/* ====== Article 5: Tier List ====== */}
+<hr className="my-12 border-border max-w-3xl" />
+
+<div className="text-xs text-text-muted font-mono mb-2">2026-06-26</div>
+<h2 className="text-2xl sm:text-3xl font-extrabold mb-2">
+  Character <span className="text-accent">Tier List</span>: Community Consensus
+</h2>
+<p className="text-text-secondary mb-8 max-w-2xl">
+  After two weeks of play, the community has reached broad agreement on hero rankings. Here&apos;s where every Z-Team member stands in the current meta.
+</p>
+
+<section className="p-6 rounded-xl border border-border bg-bg-card mb-4">
+  <h3 className="text-lg font-bold mb-2 text-accent">S-Tier</h3>
+  <div className="text-text-secondary space-y-2">
+    <p><strong className="text-text-primary">Flambae:</strong> Best AoE damage, trivializes mob encounters. Mandatory for hard mode.</p>
+    <p><strong className="text-text-primary">Phenomaman:</strong> Unkillable at max Vigor. The only hero who can solo-tank boss fights.</p>
+  </div>
+</section>
+
+<section className="p-6 rounded-xl border border-border bg-bg-card mb-4">
+  <h3 className="text-lg font-bold mb-2" style={{"color":"#22C55E"}}>A-Tier</h3>
+  <div className="text-text-secondary space-y-2">
+    <p><strong className="text-text-primary">Invisigal:</strong> Best infiltrator, but needs team support for combat-heavy missions.</p>
+    <p><strong className="text-text-primary">Sonar:</strong> Best support utility. Map reveal alone makes her A-tier.</p>
+  </div>
+</section>
+
+<section className="p-6 rounded-xl border border-border bg-bg-card mb-4">
+  <h3 className="text-lg font-bold mb-2" style={{"color":"#F59E0B"}}>B-Tier</h3>
+  <div className="text-text-secondary space-y-2">
+    <p><strong className="text-text-primary">Blonde Blazer:</strong> Jack of all trades, master of none. Viable but never optimal.</p>
+    <p><strong className="text-text-primary">Malevola:</strong> Chaotic and fun, but her AoE darkness hurts your own team as often as enemies.</p>
+  </div>
+</section>
+
+
       {/* CTA */}
       <div className="mt-12 p-6 rounded-xl border border-accent/20 bg-accent/5 max-w-3xl">
         <p className="text-sm text-text-muted">
