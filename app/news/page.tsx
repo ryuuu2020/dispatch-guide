@@ -444,6 +444,73 @@ export default function NewsPage() {
 </section>
 
 
+      {/* ====== Article 6: Team Comps ====== */}
+<hr className="my-12 border-border max-w-3xl" />
+
+<div className="text-xs text-text-muted font-mono mb-2">2026-06-27</div>
+<h2 className="text-2xl sm:text-3xl font-extrabold mb-2">
+  Top 5 <span className="text-accent">Team Compositions</span>
+</h2>
+<p className="text-text-secondary mb-8 max-w-2xl">
+  Individual hero strength matters, but team synergy wins missions. Here are the five most effective duos and trios according to the Dispatch community.
+</p>
+
+<section className="p-6 rounded-xl border border-border bg-bg-card mb-4">
+  <h3 className="text-lg font-bold mb-2">
+    <span className="text-accent">#1</span> Fire & Shadow — Flambae + Invisigal
+  </h3>
+  <p className="text-text-secondary">
+    Flambae&apos;s Fire Zone creates chaos and draws aggro. Invisigal flanks from stealth and deletes
+    priority targets. <strong className="text-text-primary">Best for: hybrid combat/infiltration.</strong> Weakness: struggles
+    against psychic enemies who ignore stealth.
+  </p>
+</section>
+
+<section className="p-6 rounded-xl border border-border bg-bg-card mb-4">
+  <h3 className="text-lg font-bold mb-2">
+    <span className="text-accent">#2</span> The Wall — Phenomaman + Sonar + Invisigal
+  </h3>
+  <p className="text-text-secondary">
+    Phenomaman tanks everything, Sonar reveals the map and stuns, Invisigal handles objectives.
+    <strong className="text-text-primary">Best for: boss fights and hard-mode missions.</strong> Weakness: slow clear
+    speed on timed missions.
+  </p>
+</section>
+
+<section className="p-6 rounded-xl border border-border bg-bg-card mb-4">
+  <h3 className="text-lg font-bold mb-2">
+    <span className="text-accent">#3</span> Blitzkrieg — Flambae + Blonde Blazer + Sonar
+  </h3>
+  <p className="text-text-secondary">
+    Speed-clear composition. Sonar reveals, Flambae nukes, Blonde Blazer cleans up stragglers.
+    <strong className="text-text-primary">Best for: timed missions and farming runs.</strong> Weakness: glass cannon —
+    one bad pull and someone goes down.
+  </p>
+</section>
+
+<section className="p-6 rounded-xl border border-border bg-bg-card mb-4">
+  <h3 className="text-lg font-bold mb-2">
+    <span className="text-accent">#4</span> Chaos Theory — Malevola + Flambae
+  </h3>
+  <p className="text-text-secondary">
+    Maximum damage, minimum control. Both heroes&apos; AoE stacks multiplicatively — enemies melt in
+    seconds. <strong className="text-text-primary">Best for: when you just want to watch things burn.</strong> Weakness:
+    friendly fire is real and painful. Bring revival charges.
+  </p>
+</section>
+
+<section className="p-6 rounded-xl border border-border bg-bg-card mb-4">
+  <h3 className="text-lg font-bold mb-2">
+    <span className="text-accent">#5</span> Solo Artist — Phenomaman (solo)
+  </h3>
+  <p className="text-text-secondary">
+    At max Vigor with Taunt and HP regen, Phenomaman can solo most non-boss missions. It&apos;s slow
+    but nearly impossible to fail. <strong className="text-text-primary">Best for: resource farming and safe clears.</strong>
+    Weakness: timed objectives are painful alone.
+  </p>
+</section>
+
+
       {/* CTA */}
       <div className="mt-12 p-6 rounded-xl border border-accent/20 bg-accent/5 max-w-3xl">
         <p className="text-sm text-text-muted">
