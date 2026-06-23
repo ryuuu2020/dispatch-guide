@@ -188,6 +188,148 @@ export default function NewsPage() {
           for all six Z-Team heroes.
         </p>
       </div>
+
+      {/* ====== Article Separator ====== */}
+      <hr className="my-12 border-border max-w-3xl" />
+
+      {/* Second Article: Opening Strategy */}
+      <div className="text-xs text-text-muted font-mono mb-2">2026-06-23</div>
+      <h1 className="text-3xl sm:text-4xl font-extrabold mb-2">
+        Best Opening Strategy:{" "}
+        <span className="text-accent">First 3 Episodes</span>
+      </h1>
+      <p className="text-xl text-accent font-heading mb-3">Who to Deploy &amp; How to Build</p>
+      <p className="text-text-secondary mb-10 max-w-2xl">
+        The first three episodes set the trajectory for your entire run. Botch your early hero
+        choices and you&apos;ll be playing catch-up for hours. Here&apos;s the optimal opening every
+        experienced player uses.
+      </p>
+
+      <article className="max-w-3xl space-y-8 text-sm leading-relaxed">
+        {/* Ep1 */}
+        <section className="p-6 rounded-xl border border-border bg-bg-card">
+          <h2 className="text-lg font-bold mb-3">
+            <span className="text-accent">#</span> Episode 1: Deploy Invisigal First
+          </h2>
+          <div className="space-y-3 text-text-secondary">
+            <p>
+              Your very first deployment should always be Invisigal. Her stealth mechanics give you
+              <strong className="text-text-primary"> full enemy intel without triggering combat</strong>,
+              which means you can scout the entire map, identify threats, and plan your route before
+              committing to any engagement. No other hero provides this level of risk-free reconnaissance
+              this early. Use her Phantom Step ability to bypass patrols and Shadow Strike to pick off
+              isolated enemies without alerting the rest of the map.
+            </p>
+            <p>
+              <strong className="text-text-primary">Key objective:</strong> In Ep1, prioritize
+              scanning all intel terminals. The information you gather here unlocks better dispatch
+              options for Ep2 and Ep3. Don&apos;t get greedy with combat &mdash; intel first, kills second.
+            </p>
+          </div>
+        </section>
+
+        {/* Ep2 */}
+        <section className="p-6 rounded-xl border border-border bg-bg-card">
+          <h2 className="text-lg font-bold mb-3">
+            <span className="text-accent">#</span> Episode 2: Pair Flambae With Anyone
+          </h2>
+          <div className="space-y-3 text-text-secondary">
+            <p>
+              Ep2 introduces your first combat-heavy dispatch. Deploy Flambae as your primary &mdash;
+              her AoE fire abilities <strong className="text-text-primary">clear crowds faster than
+              any other hero at this stage</strong>. Pair her with literally anyone from your unlocked
+              roster. She carries hard enough that the second slot is flexible.
+            </p>
+            <p>
+              <strong className="text-text-primary">Avoid deploying Sonar solo this early.</strong>
+              Sonar is a support specialist with low combat stats. Without a damage-dealer to back
+              her up, she&apos;ll get overwhelmed by mobs. Save Sonar for Ep3 when you can pair her
+              with Flambae or Phenomaman for the full recon-combat combo.
+            </p>
+          </div>
+        </section>
+
+        {/* Ep3 */}
+        <section className="p-6 rounded-xl border border-border bg-bg-card">
+          <h2 className="text-lg font-bold mb-3">
+            <span className="text-accent">#</span> Episode 3: Side With Phenomaman
+          </h2>
+          <div className="space-y-3 text-text-secondary">
+            <p>
+              Ep3 presents your first major branching choice. <strong className="text-text-primary">
+              Choose to side with Phenomaman</strong> for the best long-term stat boost. This decision
+              permanently unlocks Phenomaman&apos;s Fortitude passive (+15% HP for the entire team) and
+              grants your whole roster a resilience buff that scales into the late game.
+            </p>
+            <p>
+              The alternative path (siding with Malevola) gives a flashy immediate damage boost, but
+              it tapers off by mid-game. Phenomaman&apos;s team-wide HP bonus remains relevant through
+              the final episode. <strong className="text-text-primary">This is the single highest-impact
+              decision in the first three episodes</strong> &mdash; don&apos;t chase the short-term damage spike.
+            </p>
+          </div>
+        </section>
+
+        {/* XP Strategy */}
+        <section className="p-6 rounded-xl border border-border bg-bg-card">
+          <h2 className="text-lg font-bold mb-3">
+            <span className="text-accent">#</span> XP Strategy: Focus Fire
+          </h2>
+          <div className="space-y-3 text-text-secondary">
+            <p>
+              <strong className="text-text-primary">Don&apos;t spread XP evenly.</strong> The biggest
+              early-game trap is trying to level all six heroes equally. By Ep4 you&apos;ll have a squad
+              of mediocre generalists who can&apos;t handle higher-difficulty dispatches. Instead,
+              <strong className="text-text-primary"> focus on 2&ndash;3 heroes max</strong> through the
+              first three episodes. Recommended core trio: Invisigal (stealth), Flambae (AoE damage),
+              Phenomaman (tank). Their abilities complement each other and cover every dispatch type.
+            </p>
+          </div>
+        </section>
+
+        {/* Upgrade Priority */}
+        <section className="p-6 rounded-xl border border-accent/30 bg-accent/5">
+          <h2 className="text-lg font-bold mb-3">
+            <span className="text-accent">&#9733;</span> Upgrade Priority
+          </h2>
+          <div className="space-y-3 text-text-secondary">
+            <p>
+              When spending upgrade points, follow this priority order:
+            </p>
+            <ul className="space-y-2 [&_li]:ml-4 [&_li]:list-disc [&_li]:mb-1">
+              <li>
+                <strong className="text-text-primary">1. Movement Speed</strong> &mdash; Faster
+                heroes complete objectives quicker, dodge more attacks, and reduce dispatch time.
+                This stat pays for itself in every single mission.
+              </li>
+              <li>
+                <strong className="text-text-primary">2. Special Ability</strong> &mdash; Your
+                hero&apos;s unique ability defines their role. Upgrading it early amplifies what makes
+                each hero good (Invisigal&apos;s stealth duration, Flambae&apos;s burn radius, etc.).
+              </li>
+              <li>
+                <strong className="text-text-primary">3. HP</strong> &mdash; More survivability means
+                fewer restarts and less downtime. Rush HP after your core two stats are comfortable.
+              </li>
+            </ul>
+          </div>
+        </section>
+      </article>
+
+      {/* CTA */}
+      <div className="mt-12 p-6 rounded-xl border border-accent/20 bg-accent/5 max-w-3xl">
+        <p className="text-sm text-text-muted">
+          <strong className="text-text-primary">Ready for the mid-game?</strong> Check out our{" "}
+          <Link href="/walkthrough" className="text-accent hover:underline">
+            full episode walkthrough
+          </Link>{" "}
+          and{" "}
+          <Link href="/characters" className="text-accent hover:underline">
+            hero tier list
+          </Link>{" "}
+          for Episodes 4 through 8.
+        </p>
+      </div>
     </div>
   );
 }
