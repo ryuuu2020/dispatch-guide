@@ -316,6 +316,51 @@ export default function NewsPage() {
         </section>
       </article>
 
+      {/* ====== Article 3: Best Builds ====== */}
+<hr className="my-12 border-border max-w-3xl" />
+
+<div className="text-xs text-text-muted font-mono mb-2">2026-06-24</div>
+<h2 className="text-2xl sm:text-3xl font-extrabold mb-2">
+  Best <span className="text-accent">Builds</span>: Updated Meta
+</h2>
+<p className="text-text-secondary mb-8 max-w-2xl">
+  The Dispatch meta is settling and clear winners are emerging. Here are the three strongest hero builds in the current patch.
+</p>
+
+<section className="p-6 rounded-xl border border-border bg-bg-card mb-4">
+  <h3 className="text-lg font-bold mb-2">
+    <span className="text-accent">#1</span> Flambae — AoE Demolisher
+  </h3>
+  <p className="text-text-secondary">
+    Priority: Special Ability &gt; Combat &gt; Vigor. Max her Fire Zone first — the radius increase
+    at level 3 covers entire encounter rooms. Pair with Invisigal for flanking crits or Phenomaman
+    for unkillable frontline. <strong className="text-text-primary">This is the current S-tier build.</strong>
+  </p>
+</section>
+
+<section className="p-6 rounded-xl border border-border bg-bg-card mb-4">
+  <h3 className="text-lg font-bold mb-2">
+    <span className="text-accent">#2</span> Sonar — Ultimate Support
+  </h3>
+  <p className="text-text-secondary">
+    Priority: Intellect &gt; Mobility &gt; Vigor. Sonar&apos;s map-wide reveal at Intellect 4 is the
+    single best utility ability in the game. Stun Pulse at level 3 gives your team two free rounds
+    of damage. <strong className="text-text-primary">Build Sonar as pure support — don&apos;t waste points on Combat.</strong>
+  </p>
+</section>
+
+<section className="p-6 rounded-xl border border-border bg-bg-card mb-4">
+  <h3 className="text-lg font-bold mb-2">
+    <span className="text-accent">#3</span> Phenomaman — Immortal Tank
+  </h3>
+  <p className="text-text-secondary">
+    Priority: Vigor &gt; Charisma &gt; Combat. At Vigor 5, Phenomaman regenerates 8% HP per turn.
+    Combined with her Taunt ability, she can solo-tank any encounter while your damage dealers
+    clean up. <strong className="text-text-primary">The safest pick for hard missions.</strong>
+  </p>
+</section>
+
+
       {/* CTA */}
       <div className="mt-12 p-6 rounded-xl border border-accent/20 bg-accent/5 max-w-3xl">
         <p className="text-sm text-text-muted">
