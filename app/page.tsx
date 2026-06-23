@@ -12,7 +12,8 @@ export default function HomePage() {
     <>
       {/* Hero */}
       <section className="relative overflow-hidden border-b border-border">
-        <div className="absolute inset-0 bg-gradient-to-b from-accent/5 to-transparent pointer-events-none" />
+        <img src="/hero.png" alt="Dispatch superhero team" className="absolute inset-0 w-full h-full object-cover opacity-30" />
+        <div className="absolute inset-0 bg-gradient-to-b from-accent/10 via-bg/60 to-bg pointer-events-none" />
         <div className="mx-auto max-w-6xl px-4 py-20 sm:py-28 relative">
           <div className="inline-block mb-4 px-3 py-1 rounded-full bg-accent/10 border border-accent/20 text-accent text-xs font-mono">
             Xbox Summer 2026 — Now Available on All Platforms
