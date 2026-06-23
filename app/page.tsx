@@ -44,6 +44,12 @@ export default function HomePage() {
             >
               Episode Guide
             </Link>
+            <Link
+              href="/news"
+              className="px-5 py-2.5 rounded-lg border border-border text-text-secondary hover:text-text-primary hover:border-text-muted transition-colors"
+            >
+              News
+            </Link>
           </div>
         </div>
       </section>
