@@ -23,6 +23,9 @@ export default function Footer() {
             <a href="https://solarpunk-guide-ecru.vercel.app" target="_blank" rel="noopener" className="text-text-muted hover:text-accent transition-colors">
               Solarpunk Guide
             </a>
+            <a href="https://menace-guide.vercel.app" target="_blank" rel="noopener" className="text-text-muted hover:text-accent transition-colors">
+              MENACE Guide
+            </a>
             {/* 新站自动追加 */}
           </div>
         </div>
