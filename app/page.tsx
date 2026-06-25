@@ -147,7 +147,7 @@ export default function HomePage() {
 
             {/* ===== Hero Banner ===== */}
             <img
-              src="/hero.jpg"
+              src="/hero.png"
               alt="Dispatch"
               className="w-full h-48 lg:h-64 object-cover rounded border border-border-subtle"
             />
