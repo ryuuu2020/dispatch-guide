@@ -145,6 +145,13 @@ export default function HomePage() {
         <main className="flex-1 bg-tactical-grid p-4 lg:p-6">
           <div className="max-w-6xl mx-auto space-y-6">
 
+            {/* ===== Hero Banner ===== */}
+            <img
+              src="/hero.jpg"
+              alt="Dispatch"
+              className="w-full h-48 lg:h-64 object-cover rounded border border-border-subtle"
+            />
+
             {/* ===== Section 1: Top Featured Heroes ===== */}
             <section>
               <div className="flex items-center justify-between mb-4">
