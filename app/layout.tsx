@@ -33,10 +33,10 @@ const NAV_ITEMS = [
 ];
 
 const STATS = [
-  { label: 'ACTIVE HEROES', value: '6', unit: '' },
+  { label: 'ACTIVE HEROES', value: '10', unit: '' },
   { label: 'PATCH', value: '1.0', unit: '' },
   { label: 'EPISODES', value: '8', unit: '' },
-  { label: 'ENDINGS', value: '4', unit: '' },
+  { label: 'ENDING PATHS', value: '3+', unit: '' },
 ];
 
 export default function RootLayout({

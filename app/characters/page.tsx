@@ -5,7 +5,7 @@ import CharacterCard from "@/components/CharacterCard";
 export const metadata: Metadata = {
   title: "Z-Team Characters — All 6 Heroes Stats & Builds",
   description:
-    "Complete Dispatch character guide: Invisigal, Flambae, Malevola, Sonar, Blonde Blazer, Phenomaman. Stats, builds, best pairings for every Z-Team hero.",
+    "Complete Dispatch character guide: Invisigal, Flambe, Malevola, Sonar, Coupe, Golem, Prism, Punchup, Water Boy, Phenomenon Man. Stats, builds, best pairings for every Z-Team hero.",
 };
 
 export default function CharactersPage() {

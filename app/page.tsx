@@ -8,16 +8,16 @@ import { guideUpdates } from '@/lib/data';
    ============================================ */
 
 const HERO_TABLE = [
-  { tier: 'S', name: 'Flambae', role: 'Damage Dealer', stat: 'Combat 5★', slug: 'flambae' },
-  { tier: 'A', name: 'Blonde Blazer', role: 'All-Rounder', stat: 'All 4★', slug: 'blonde-blazer' },
+  { tier: 'S', name: 'Flambe', role: 'Damage Dealer', stat: 'Combat 5★', slug: 'flambe' },
+  { tier: 'A', name: 'Coupe', role: 'Investigation Specialist', stat: 'Mobility 4★', slug: 'coupe' },
   { tier: 'A', name: 'Phenomaman', role: 'Tank', stat: 'Vigor 5★', slug: 'phenomaman' },
 ];
 
 const QUICK_CARDS = [
-  { label: 'HEROES', value: '6', href: '/characters', desc: 'Full Z-Team roster with stats, builds, and best pairings' },
+  { label: 'HEROES', value: '10', href: '/characters', desc: 'Full Z-Team roster with stats, builds, and best pairings' },
   { label: 'CORE STATS', value: '5', href: '/stats', desc: 'Combat, Intellect, Charisma, Mobility & Vigor explained' },
   { label: 'EPISODES', value: '8', href: '/episodes', desc: 'Complete walkthrough and key decision points' },
-  { label: 'ENDINGS', value: '4', href: '/endings', desc: 'True Hero, Antihero, Everyman & Secret — how to unlock' },
+  { label: 'ENDINGS', value: '3+', href: '/endings', desc: 'Hero, Anti-Hero, and Invisigal fate — key choices that shape your ending' },
 ];
 
 function getTierColor(tier: string): string {
@@ -240,7 +240,7 @@ export default function HomePage() {
                     What is Dispatch?
                   </summary>
                   <p className="px-4 pb-3 text-sm text-text-secondary leading-relaxed">
-                    Dispatch is a superhero workplace comedy game by AdHoc Studio, released in Summer 2026 for Xbox and all major platforms. You play as the dispatcher for the Z-Team — 6 misfit superheroes — making mission assignments, managing team dynamics, and navigating branching storylines with 4 different endings.
+                    Dispatch is a superhero workplace comedy game by AdHoc Studio, released starting October 2025 on PC and PS5, with Nintendo Switch (January 2026) and Xbox Series X|S (Summer 2026) following. You play as Robert Robertson, the dispatcher for the Z-Team — a group of misfit superheroes — making mission assignments, managing team dynamics, and navigating branching storylines with multiple endings.
                   </p>
                 </details>
                 <details className="bg-abyss-light border border-border-subtle">
@@ -248,7 +248,7 @@ export default function HomePage() {
                     How many characters are in Dispatch?
                   </summary>
                   <p className="px-4 pb-3 text-sm text-text-secondary leading-relaxed">
-                    There are 6 main Z-Team heroes (Invisigal, Flambae, Malevola, Sonar, Blonde Blazer, Phenomaman) and 5 supporting characters (Coupé, Golem, Prism, Punch Up, Waterboy). Each main hero has unique stats, abilities, and story arcs.
+                    There are 10 Z-Team heroes in Dispatch including Invisigal, Flambe, Malevola, Sonar, Coupe, Golem, Prism, Punchup, Water Boy, and Phenomenon Man. Each hero has unique stats and abilities that make them suitable for different mission types.
                   </p>
                 </details>
                 <details className="bg-abyss-light border border-border-subtle">
@@ -264,7 +264,7 @@ export default function HomePage() {
                     What platforms is Dispatch available on?
                   </summary>
                   <p className="px-4 pb-3 text-sm text-text-secondary leading-relaxed">
-                    PS5 & PC (October 2025), Nintendo Switch (January 2026), Xbox Series X|S (Summer 2026). $29.99 Standard Edition | $39.99 Digital Deluxe Edition.
+                    PS5 & PC (October 2025), Nintendo Switch (January 2026), Xbox Series X|S (Summer 2026). $19.99 Standard Edition | $39.99 Digital Deluxe Edition.
                   </p>
                 </details>
               </div>
@@ -308,7 +308,7 @@ export default function HomePage() {
                       <li><strong className="text-text-primary">Xbox Series X|S</strong> — Summer 2026 (now available!)</li>
                     </ul>
                     <p className="mt-2">
-                      $29.99 Standard Edition | $39.99 Digital Deluxe Edition
+                      $19.99 Standard Edition | $39.99 Digital Deluxe Edition
                     </p>
                   </div>
                 </div>

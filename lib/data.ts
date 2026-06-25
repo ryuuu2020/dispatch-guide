@@ -88,18 +88,18 @@ export const characters: Character[] = [
     ],
   },
   {
-    slug: "flambae",
-    name: "Flambae",
+    slug: "flambe",
+    name: "Flambe",
     tagline: "The Pyromaniac Brawler",
     description:
-      "Flambae is the team's heavy-hitter — a pyrokinetic brawler with max Combat and excellent Mobility. If something needs to be on fire or knocked unconscious, Flambae's your hero. Low Intellect and Charisma mean diplomatic missions and puzzles are not her forte. Upgrade Vigor as a secondary focus so she can survive the brawls she starts.",
+      "Flambe is the team's heavy-hitter — a pyrokinetic brawler with max Combat and excellent Mobility. If something needs to be on fire or knocked unconscious, Flambe's your hero. Low Intellect and Charisma mean diplomatic missions and puzzles are not her forte. Upgrade Vigor as a secondary focus so she can survive the brawls she starts.",
     stats: { combat: 5, intellect: 2, charisma: 2, mobility: 4, vigor: 3 },
     build: "Combat + Mobility",
     buildDescription:
-      "Max out Combat first — Flambae is the team's primary damage dealer. Invest in Mobility to close gaps and chase down fleeing targets. Secondary focus on Vigor to improve survivability in extended fights.",
+      "Max out Combat first — Flambe is the team's primary damage dealer. Invest in Mobility to close gaps and chase down fleeing targets. Secondary focus on Vigor to improve survivability in extended fights.",
     pairings: [
-      { partner: "Prism", reason: "Prism provides ranged support while Flambae brawls up close" },
-      { partner: "Malevola", reason: "Malevola handles social situations Flambae can't" },
+      { partner: "Prism", reason: "Prism provides ranged support while Flambe brawls up close" },
+      { partner: "Malevola", reason: "Malevola handles social situations Flambe can't" },
     ],
     color: "#f97316", // orange
     details: [
@@ -111,10 +111,10 @@ export const characters: Character[] = [
     ],
     special: undefined,
     faq: [
-      { question: "How do I maximize Flambae's damage?", answer: "Max Combat first to unlock her full pyrokinetic ability tree. Then invest in Mobility for gap-closing and chase sequences. Vigor should be your tertiary stat — she needs some survivability to stay in the fight." },
-      { question: "Why can't Flambae handle dialogue missions?", answer: "2★ Charisma means she'll fail almost every social check in the game. Don't send her to negotiate, persuade, or de-escalate — let Malevola or Blonde Blazer handle those. Flambae's answer to conflict is always fire." },
-      { question: "What's Flambae's best team composition?", answer: "Prism (ranged support) + Phenomaman (tank) is the classic trio. Prism softens targets from range, Phenomaman draws aggro, and Flambae closes in for the kill. Malevola can sub in for social-heavy missions." },
-      { question: "Is Flambae worth upgrading early?", answer: "Absolutely. She's the strongest damage-dealer in the Z-Team and carries hard through mid-game content. Just make sure you have a tank to keep her alive during boss fights." },
+      { question: "How do I maximize Flambe's damage?", answer: "Max Combat first to unlock her full pyrokinetic ability tree. Then invest in Mobility for gap-closing and chase sequences. Vigor should be your tertiary stat — she needs some survivability to stay in the fight." },
+      { question: "Why can't Flambe handle dialogue missions?", answer: "2★ Charisma means she'll fail almost every social check in the game. Don't send her to negotiate, persuade, or de-escalate — let Malevola or Coupe handle those. Flambe's answer to conflict is always fire." },
+      { question: "What's Flambe's best team composition?", answer: "Prism (ranged support) + Phenomenon Man (tank) is the classic trio. Prism softens targets from range, Phenomenon Man draws aggro, and Flambe closes in for the kill. Malevola can sub in for social-heavy missions." },
+      { question: "Is Flambe worth upgrading early?", answer: "Absolutely. She's the strongest damage-dealer in the Z-Team and carries hard through mid-game content. Just make sure you have a tank to keep her alive during boss fights." },
     ],
   },
   {
@@ -142,7 +142,7 @@ export const characters: Character[] = [
     special: undefined,
     faq: [
       { question: "Is Malevola the best hero in Dispatch?", answer: "She's the most versatile at minimum — 4★ Combat and 4★ Charisma with no stat below 3 makes her viable for almost any mission. Not the absolute best at any one thing, but she'll never be the wrong pick either." },
-      { question: "Who pairs best with Malevola?", answer: "Sonar is her top pairing — the game's best duo synergy with complementary stats and shared story beats. Blonde Blazer is also excellent — two well-rounded heroes create an unbeatable flexible core." },
+      { question: "Who pairs best with Malevola?", answer: "Sonar is her top pairing — the game's best duo synergy with complementary stats and shared story beats. Coupe is also excellent — two versatile heroes create an unbeatable flexible core." },
       { question: "What's Malevola's best build?", answer: "Balance Combat and Charisma equally. She's a hybrid fighter-talker. Don't specialize her — her strength is being able to do both. If you must lean one way, prioritize Charisma for the unique dialogue options it unlocks." },
       { question: "Can Malevola be my main hero?", answer: "Yes. She's one of the best 'main' heroes because she never gets hard-countered. When you don't know what a mission will demand, Malevola is the safest dispatch choice on the roster." },
     ],
@@ -178,48 +178,47 @@ export const characters: Character[] = [
     ],
   },
   {
-    slug: "blonde-blazer",
-    name: "Blonde Blazer",
-    tagline: "The Ultimate All-Rounder",
+    slug: "coupe",
+    name: "Coupe",
+    tagline: "The Investigation Specialist",
     description:
-      "Blonde Blazer is the definition of versatility. With 4 stars across every single stat, she's the most adaptable hero in the Z-Team. Need a fighter? She delivers. A hacker? Covered. A negotiator? She can talk. Her balanced stat line has no weaknesses, making her the ultimate flex pick for any mission composition. If you're building a team around one hero, Blonde Blazer is the foundation.",
-    stats: { combat: 4, intellect: 4, charisma: 4, mobility: 4, vigor: 4 },
-    build: "Adaptable — fill any role",
+      "Coupe is a hero specializing in investigation and pursuit. When not cut from the team in Episode 3, Coupe remains a valuable asset for missions requiring detective work and high-speed chases. Players face a critical decision in Episode 3: keep Coupe or keep Sonar on the Z-Team.",
+    stats: { combat: 3, intellect: 3, charisma: 2, mobility: 4, vigor: 3 },
+    build: "Investigation + Mobility",
     buildDescription:
-      "Blonde Blazer needs no specific build direction — she's already excellent everywhere. Use her to fill whatever gap your team has. Pair her with specialists and let her cover their weaknesses. The most forgiving hero for new players.",
+      "Focus on Mobility and Intellect upgrades. Coupe excels at investigation missions and pursuit scenarios. Balance stats to cover both detective work and field operations.",
     pairings: [
-      { partner: "Any hero", reason: "Blonde Blazer complements everyone — she fills any missing role" },
-      { partner: "Malevola", reason: "Two well-rounded heroes make an unbeatable core duo" },
+      { partner: "Invisigal", reason: "Invisigal handles stealth while Coupe handles investigation" },
+      { partner: "Malevola", reason: "Malevola covers social encounters, Coupe covers detective work" },
     ],
     color: "#eab308", // yellow
     details: [
-      "The only hero with straight 4★ across all five stats",
-      "Zero weaknesses — deploy her into any mission type without risk",
-      "Best hero for new players learning the game",
-      "Pairs perfectly with any other Z-Team member",
-      "Lacks a 5★ specialization — can't outshine true specialists",
+      "Specializes in investigation and pursuit missions",
+      "Episode 3 choice: keep Coupe or lose access to Sonar permanently",
+      "Strong Mobility for chase and traversal sequences",
+      "If cut from the team, Coupe appears as an antagonist in Episode 8",
+      "Forgiveness option available in Episode 8 if defeated in missions",
     ],
-    special: undefined,
+    special: "Episode 3 decision determines availability for rest of game",
     faq: [
-      { question: "What makes Blonde Blazer special?", answer: "She's the only hero with straight 4★ across all five stats — zero weaknesses. No other Z-Team member can be deployed into literally any mission type without risk. She's not the best at anything, but she's never the wrong choice." },
-      { question: "Is Blonde Blazer good for beginners?", answer: "Perfect for beginners. She's the most forgiving hero — you can't make a bad decision with her. Use her to learn mission types while you figure out which specialists you prefer. Veterans still value her as the ultimate flex pick." },
-      { question: "Who should I pair with Blonde Blazer?", answer: "Anyone. Literally. She fills whatever gap your team has. Pair her with Flambae if you need the damage dealer to have backup. Pair her with Phenomaman if you want the tank to have offensive support. She's the glue." },
-      { question: "Does Blonde Blazer have any weaknesses?", answer: "Her only weakness is lacking a 5★ specialization. In missions that demand max Combat (5★), Flambae outperforms her. In max Charisma situations, specialized Malevola/Sonar edge her out. She's the master of none." },
+      { question: "Should I keep Coupe or Sonar in Episode 3?", answer: "This is one of Dispatch's hardest choices. Sonar provides unique transformation mechanics and investigation support. Coupe provides strong pursuit and chase abilities. The hero you cut joins Shroud and becomes your opponent in Episode 8. Both paths lead to interesting narrative outcomes." },
+      { question: "What happens if I cut Coupe?", answer: "Coupe joins Shroud's side and becomes a recurring antagonist. In Episode 8, you compete directly against Coupe. If you defeat Coupe's health bar through successful missions, you can choose to forgive them and bring them back to the Z-Team." },
+      { question: "What is Coupe best at?", answer: "Investigation and pursuit missions. Coupe's Mobility (4★) makes them excellent for chase sequences and time-critical scenarios. Intellect (3★) handles detective work and puzzle-solving." },
     ],
   },
   {
-    slug: "phenomaman",
-    name: "Phenomaman",
+    slug: "phenomenon-man",
+    name: "Phenomenon Man",
     tagline: "The Unbreakable Tank",
     description:
-      "Phenomaman is the Z-Team's defensive anchor. With max Vigor (5★) and high Intellect and Mobility, she's built to absorb damage, solve problems under pressure, and protect her teammates. Low Combat means she won't win fights alone, but her durability gives damage-dealers all the time they need. Think of her as the team's living shield — and the smartest tank you'll ever meet.",
+      "Phenomenon Man is the Z-Team's defensive anchor. With max Vigor (5★) and high Intellect and Mobility, she's built to absorb damage, solve problems under pressure, and protect her teammates. Low Combat means she won't win fights alone, but her durability gives damage-dealers all the time they need. Think of her as the team's living shield — and the smartest tank you'll ever meet.",
     stats: { combat: 2, intellect: 4, charisma: 3, mobility: 4, vigor: 5 },
     build: "Vigor + Mobility + Intellect",
     buildDescription:
       "Max out Vigor first to become nearly unkillable. Invest in Mobility for repositioning and rescue speed, Intellect for puzzle missions. Her Combat will always be low — always pair her with a damage-dealer.",
     pairings: [
-      { partner: "Flambae", reason: "Phenomaman tanks, Flambae burns — perfect offense/defense balance" },
-      { partner: "Blonde Blazer", reason: "Blonde Blazer covers Phenomaman's low Combat" },
+      { partner: "Flambe", reason: "Phenomenon Man tanks, Flambe burns — perfect offense/defense balance" },
+      { partner: "Coupe", reason: "Coupe covers Phenomenon Man's low Combat" },
     ],
     color: "#22c55e", // green
     details: [
@@ -231,10 +230,10 @@ export const characters: Character[] = [
     ],
     special: undefined,
     faq: [
-      { question: "Can Phenomaman fight alone?", answer: "No — her Combat is only 2★. Always deploy her with a damage-dealer like Flambae or Invisigal. Phenomaman's job is to absorb enemy attention so your damage dealers can work freely. She's the shield, not the sword." },
-      { question: "How do I use Phenomaman effectively?", answer: "Position her between enemies and your damage dealers. Let her draw aggro with her 5★ Vigor while Flambae/Invisigal flank. Use her 4★ Mobility to quickly reposition and protect allies in danger. Her 4★ Intellect also makes her useful for puzzle sections." },
-      { question: "What missions is Phenomaman best for?", answer: "Escort missions (protect the VIP), defense objectives (hold the line), and any mission with heavy enemy presence. She's also excellent in Episode 7 and 8 where sustained survivability is critical." },
-      { question: "What stats should I upgrade for Phenomaman?", answer: "Vigor → Mobility → Intellect. Max Vigor first to make her nearly unkillable. Mobility helps her reposition quickly. Intellect is surprisingly high (4★) — it unlocks unique puzzle-skipping options. Don't bother upgrading Combat — it'll never be her strength." },
+      { question: "Can Phenomenon Man fight alone?", answer: "No — her Combat is only 2★. Always deploy her with a damage-dealer like Flambe or Invisigal. Phenomenon Man's job is to absorb enemy attention so your damage dealers can work freely. She's the shield, not the sword." },
+      { question: "How do I use Phenomenon Man effectively?", answer: "Position her between enemies and your damage dealers. Let her draw aggro with her 5★ Vigor while Flambe/Invisigal flank. Use her 4★ Mobility to quickly reposition and protect allies in danger. Her 4★ Intellect also makes her useful for puzzle sections." },
+      { question: "What missions is Phenomenon Man best for?", answer: "Escort missions (protect the VIP), defense objectives (hold the line), and any mission with heavy enemy presence. She's also excellent in Episode 7 and 8 where sustained survivability is critical." },
+      { question: "What stats should I upgrade for Phenomenon Man?", answer: "Vigor → Mobility → Intellect. Max Vigor first to make her nearly unkillable. Mobility helps her reposition quickly. Intellect is surprisingly high (4★) — it unlocks unique puzzle-skipping options. Don't bother upgrading Combat — it'll never be her strength." },
     ],
   },
 ];
@@ -471,9 +470,9 @@ export const guideUpdates: GuideUpdate[] = [
   },
   {
     date: "2026-06-15",
-    title: "Phenomaman Build Deep Dive",
+    title: "Phenomenon Man Build Deep Dive",
     slug: "phenomaman-build",
-    description: "Is 5★ Vigor actually worth it? We break down Phenomaman's optimal stat distribution, best pairings, and why she might be the most underrated hero in Dispatch.",
+    description: "Is 5★ Vigor actually worth it? We break down Phenomenon Man's optimal stat distribution, best pairings, and why she might be the most underrated hero in Dispatch.",
   },
 ];
 
