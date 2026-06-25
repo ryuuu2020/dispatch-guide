@@ -49,7 +49,10 @@ export default function RootLayout({
         />
       </head>
       <body className="font-body min-h-screen flex flex-col">
-        {children}
+        <div className="flex-1">{children}</div>
+        <footer className="text-center py-4 border-t border-white/10">
+          <a href="https://afdian.com/a/gameguidehub" target="_blank" rel="noopener noreferrer" className="text-xs text-text-muted hover:text-tactical-blue transition-colors">❤️ Support Us</a>
+        </footer>
       </body>
     </html>
   );
