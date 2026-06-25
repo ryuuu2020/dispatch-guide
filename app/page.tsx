@@ -481,7 +481,7 @@ export default function HomePage() {
               </h4>
               <div className="flex flex-wrap gap-4 text-[11px] font-mono">
                 <a href="https://afdian.com/a/gameguidehub" target="_blank" rel="noopener" className="text-text-muted hover:text-tactical-blue transition-colors">
-                  爱发电支持我们
+                  ❤️ Support Us on Afdian
                 </a>
                 <a href="https://amazon.com/s?k=gaming+gear&tag=gameguidehub-20" target="_blank" rel="noopener" className="text-text-muted hover:text-tactical-blue transition-colors">
                   Shop Gaming Gear
