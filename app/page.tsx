@@ -54,6 +54,23 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* FAQ */}
+      <section className="mx-auto max-w-6xl px-4 py-8">
+        <h2 className="text-xl font-bold mb-4">Frequently Asked <span className="text-accent">Questions</span></h2>
+        <details className="mb-3 p-3 rounded-lg border border-border bg-bg-card">
+          <summary className="font-medium cursor-pointer hover:text-accent">What is Dispatch?</summary>
+          <p className="mt-2 text-sm text-text-secondary">Dispatch is a superhero workplace comedy game by AdHoc Studio, released in Summer 2026 for Xbox and all major platforms. You play as the dispatcher for the Z-Team — 6 misfit superheroes — making mission assignments, managing team dynamics, and navigating branching storylines with 4 different endings.</p>
+        </details>
+        <details className="mb-3 p-3 rounded-lg border border-border bg-bg-card">
+          <summary className="font-medium cursor-pointer hover:text-accent">How many characters are in Dispatch?</summary>
+          <p className="mt-2 text-sm text-text-secondary">There are 6 main Z-Team heroes (Invisigal, Flambae, Malevola, Sonar, Blonde Blazer, Phenomaman) and 5 supporting characters (Coupé, Golem, Prism, Punch Up, Waterboy). Each main hero has unique stats, abilities, and story arcs.</p>
+        </details>
+        <details className="mb-3 p-3 rounded-lg border border-border bg-bg-card">
+          <summary className="font-medium cursor-pointer hover:text-accent">Is Dispatch free to play?</summary>
+          <p className="mt-2 text-sm text-text-secondary">Dispatch is a premium game available on Xbox, PlayStation, Switch, and PC (Steam). It is not free-to-play. Pricing varies by platform and region.</p>
+        </details>
+      </section>
+
       {/* Quick nav grid */}
       <section className="mx-auto max-w-6xl px-4 py-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">

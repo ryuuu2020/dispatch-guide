@@ -79,6 +79,23 @@ export default function ToolsPage() {
         Tier list of proven team combinations. Tested across all 8 episodes and 4 endings.
       </p>
 
+      {/* FAQ */}
+      <div className="faq-snippets mb-8">
+        <h2 className="text-xl font-bold mb-4"><span className="text-accent">#</span> FAQ</h2>
+        <details className="mb-3 p-3 rounded-lg border border-border bg-bg-card">
+          <summary className="font-medium cursor-pointer hover:text-accent">What is the best team composition in Dispatch?</summary>
+          <p className="mt-2 text-sm text-text-secondary">The Malevola + Sonar duo is the strongest 2-hero combination with no weaknesses. For 3-hero teams, the Phenomaman + Flambae + Malevola Classic MMO Trio can handle every mission type in the game.</p>
+        </details>
+        <details className="mb-3 p-3 rounded-lg border border-border bg-bg-card">
+          <summary className="font-medium cursor-pointer hover:text-accent">How do I pick the right heroes for a mission?</summary>
+          <p className="mt-2 text-sm text-text-secondary">Match hero stats to mission requirements: Combat missions need high Attack, stealth needs Mobility, social needs Charm. Check the mission type before dispatching and select heroes whose top stats align.</p>
+        </details>
+        <details className="mb-3 p-3 rounded-lg border border-border bg-bg-card">
+          <summary className="font-medium cursor-pointer hover:text-accent">Which pairings should I avoid?</summary>
+          <p className="mt-2 text-sm text-text-secondary">Avoid the Invisigal + Flambae Double Glass Cannon pairing unless you&apos;re experienced — both are fragile and one mistake wipes the team. Also avoid sending low-Charm heroes to negotiation missions.</p>
+        </details>
+      </div>
+
       <div className="space-y-4">
         {teamComps.map((comp, i) => (
           <div key={i} className="p-5 rounded-xl border border-border bg-bg-card">

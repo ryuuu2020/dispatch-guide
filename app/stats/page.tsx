@@ -27,6 +27,23 @@ export default function StatsPage() {
         decisions — sending a low-Charisma hero to a negotiation is a recipe for disaster.
       </p>
 
+      {/* FAQ */}
+      <div className="faq-snippets mb-8">
+        <h2 className="text-xl font-bold mb-4"><span className="text-accent">#</span> FAQ</h2>
+        <details className="mb-3 p-3 rounded-lg border border-border bg-bg-card">
+          <summary className="font-medium cursor-pointer hover:text-accent">What stats matter most in Dispatch?</summary>
+          <p className="mt-2 text-sm text-text-secondary">Combat and Mobility are the two most impactful stats. Combat determines mission success in fight encounters, while Mobility enables stealth and scouting. Charisma is critical for negotiation dispatches.</p>
+        </details>
+        <details className="mb-3 p-3 rounded-lg border border-border bg-bg-card">
+          <summary className="font-medium cursor-pointer hover:text-accent">How do star ratings work for hero stats?</summary>
+          <p className="mt-2 text-sm text-text-secondary">Each hero has 5 stats rated 1-5 stars: Combat, Intellect, Charisma, Mobility, and Vigor. Higher star ratings mean better performance on related dispatch missions. A 1-star stat will almost certainly fail a relevant mission.</p>
+        </details>
+        <details className="mb-3 p-3 rounded-lg border border-border bg-bg-card">
+          <summary className="font-medium cursor-pointer hover:text-accent">Can I improve a hero&apos;s stats?</summary>
+          <p className="mt-2 text-sm text-text-secondary">Base stats are fixed, but you can improve performance through team synergies, good team pairings, and by selecting heroes with complementary stat spreads. Some storyline choices grant temporary stat boosts.</p>
+        </details>
+      </div>
+
       {/* Stat cards */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-16">
         {statsInfo.map((stat) => (

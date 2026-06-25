@@ -5,7 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { SITE_TITLE, SITE_DESCRIPTION, SITE_URL } from "@/lib/data";
 
-const GA_ID = "G-38YD9KRS92";
+const GA_ID = "G-ET6778V62K";
 
 export const metadata: Metadata = {
   title: {

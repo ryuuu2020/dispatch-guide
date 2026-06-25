@@ -28,6 +28,23 @@ export default function NewsPage() {
         to unlock her full potential.
       </p>
 
+      {/* FAQ */}
+      <div className="faq-snippets mb-8">
+        <h2 className="text-xl font-bold mb-4"><span className="text-accent">#</span> FAQ</h2>
+        <details className="mb-3 p-3 rounded-lg border border-border bg-bg-card">
+          <summary className="font-medium cursor-pointer hover:text-accent">When was Dispatch last updated?</summary>
+          <p className="mt-2 text-sm text-text-secondary">Dispatch launched on Xbox Summer Showcase 2026 with all platforms supported. AdHoc Studio continues to release patches and balance updates. Check this page for the latest news and update notes.</p>
+        </details>
+        <details className="mb-3 p-3 rounded-lg border border-border bg-bg-card">
+          <summary className="font-medium cursor-pointer hover:text-accent">Are there plans for new characters in Dispatch?</summary>
+          <p className="mt-2 text-sm text-text-secondary">AdHoc Studio has not announced DLC characters yet, but the game&apos;s popularity suggests future content is likely. Subscribe to our news feed for the latest announcements and character reveals.</p>
+        </details>
+        <details className="mb-3 p-3 rounded-lg border border-border bg-bg-card">
+          <summary className="font-medium cursor-pointer hover:text-accent">Where can I find patch notes for Dispatch?</summary>
+          <p className="mt-2 text-sm text-text-secondary">Official patch notes are posted on the AdHoc Studio website and Steam community hub. We summarize key changes and balance adjustments here on the news page with our community-focused analysis.</p>
+        </details>
+      </div>
+
       {/* Article */}
       <article className="max-w-3xl space-y-8 text-sm leading-relaxed">
         {/* Stats */}

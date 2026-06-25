@@ -19,6 +19,23 @@ export default function StrategyPage() {
         what choices matter, not the story outcomes.
       </p>
 
+      {/* FAQ */}
+      <div className="faq-snippets mb-8">
+        <h2 className="text-xl font-bold mb-4"><span className="text-accent">#</span> FAQ</h2>
+        <details className="mb-3 p-3 rounded-lg border border-border bg-bg-card">
+          <summary className="font-medium cursor-pointer hover:text-accent">What is the best overall strategy in Dispatch?</summary>
+          <p className="mt-2 text-sm text-text-secondary">Send the right hero for each mission — match hero stats to dispatch requirements (Combat → Attack, Stealth → Mobility, Social → Charm). Keep heroes healthy between missions and rotate to avoid fatigue penalties.</p>
+        </details>
+        <details className="mb-3 p-3 rounded-lg border border-border bg-bg-card">
+          <summary className="font-medium cursor-pointer hover:text-accent">How to get the True Hero ending?</summary>
+          <p className="mt-2 text-sm text-text-secondary">Make morally positive choices throughout the story, keep all Z-Team members alive, complete all character-specific dispatch missions, and maintain high team morale. The True Hero ending requires specific key choices in the final act.</p>
+        </details>
+        <details className="mb-3 p-3 rounded-lg border border-border bg-bg-card">
+          <summary className="font-medium cursor-pointer hover:text-accent">How long does Dispatch take to complete?</summary>
+          <p className="mt-2 text-sm text-text-secondary">A full playthrough with one ending takes 15-20 hours. Completing all four endings and every character dispatch requires 30-40 hours. Use the episode guide to track your progress through each chapter.</p>
+        </details>
+      </div>
+
       <div className="space-y-12">
         {endings.map((ending) => (
           <section key={ending.id} className="p-6 rounded-xl border border-border bg-bg-card">

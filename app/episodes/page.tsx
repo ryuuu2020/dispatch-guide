@@ -19,6 +19,23 @@ export default function EpisodesPage() {
         carry between episodes — there are no do-overs.
       </p>
 
+      {/* FAQ */}
+      <div className="faq-snippets mb-8">
+        <h2 className="text-xl font-bold mb-4"><span className="text-accent">#</span> FAQ</h2>
+        <details className="mb-3 p-3 rounded-lg border border-border bg-bg-card">
+          <summary className="font-medium cursor-pointer hover:text-accent">How many episodes are in Dispatch?</summary>
+          <p className="mt-2 text-sm text-text-secondary">Dispatch has 8 main episodes: Pivot, Bootstrap, Roadmap, Sprint, Standup, All-Hands, Retro, and Synergy. Each contains 3-5 dispatch missions with branching choices that affect the ending.</p>
+        </details>
+        <details className="mb-3 p-3 rounded-lg border border-border bg-bg-card">
+          <summary className="font-medium cursor-pointer hover:text-accent">What is the hardest episode in Dispatch?</summary>
+          <p className="mt-2 text-sm text-text-secondary">Retro (Episode 7) is widely considered the most difficult, with back-to-back combat dispatches and strict stat requirements. Bring your best-attack heroes (Flambae, Malevola) and keep backup heroes healthy.</p>
+        </details>
+        <details className="mb-3 p-3 rounded-lg border border-border bg-bg-card">
+          <summary className="font-medium cursor-pointer hover:text-accent">Do my choices in one episode affect later episodes?</summary>
+          <p className="mt-2 text-sm text-text-secondary">Yes, all choices carry forward. Hero injuries, relationship status with characters, and key story decisions made in earlier episodes directly impact available dispatches and endings in later chapters.</p>
+        </details>
+      </div>
+
       {/* Timeline */}
       <div className="relative">
         {/* Vertical line */}

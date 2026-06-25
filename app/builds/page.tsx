@@ -19,6 +19,23 @@ export default function BuildsPage() {
         maximizes their strengths and covers their weaknesses. Use this as your dispatch cheat sheet.
       </p>
 
+      {/* FAQ */}
+      <div className="faq-snippets mb-8">
+        <h2 className="text-xl font-bold mb-4"><span className="text-accent">#</span> FAQ</h2>
+        <details className="mb-3 p-3 rounded-lg border border-border bg-bg-card">
+          <summary className="font-medium cursor-pointer hover:text-accent">What is the best build in Dispatch?</summary>
+          <p className="mt-2 text-sm text-text-secondary">There is no universal best build. Invisigal&apos;s Mobility build excels at scouting and stealth missions. Flambae&apos;s Attack build dominates combat. Match your build to the dispatch mission type for optimal results.</p>
+        </details>
+        <details className="mb-3 p-3 rounded-lg border border-border bg-bg-card">
+          <summary className="font-medium cursor-pointer hover:text-accent">How should I prioritize stats for each hero?</summary>
+          <p className="mt-2 text-sm text-text-secondary">Focus on each hero&apos;s top 2 stats. For example, prioritize Mobility for Invisigal, Attack for Flambae, and Charm for Blonde Blazer. Avoid spreading stats evenly — specialization is better than balance.</p>
+        </details>
+        <details className="mb-3 p-3 rounded-lg border border-border bg-bg-card">
+          <summary className="font-medium cursor-pointer hover:text-accent">What is the best build for beginners?</summary>
+          <p className="mt-2 text-sm text-text-secondary">Start with Invisigal (all-rounder, 100 Mobility) and pair with Flambae (heavy hitter). This duo handles most early-game missions. Add Malevola for tactical missions once you unlock advanced dispatches.</p>
+        </details>
+      </div>
+
       {/* Build cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {characters.map((c) => {
