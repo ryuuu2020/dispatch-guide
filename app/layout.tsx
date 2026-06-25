@@ -112,6 +112,7 @@ export default function RootLayout({
                 </div>
               ))}
               <div className="flex-1" />
+              <a href="https://afdian.com/a/gameguidehub" target="_blank" rel="noopener" className="text-[11px] font-mono text-text-muted hover:text-tactical-blue transition-colors mr-3">❤️ Support Us</a>
               <div className="hidden sm:flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-terminal-green animate-pulse-subtle" />
                 <span className="text-[11px] font-mono text-text-muted">ONLINE</span>
