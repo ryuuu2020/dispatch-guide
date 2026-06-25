@@ -20,7 +20,7 @@ export default function Footer() {
         <div className="mt-6 pt-4 border-t border-border">
           <h4 className="text-xs font-semibold text-text-muted mb-2 tracking-wide uppercase">More Game Guides</h4>
           <div className="flex flex-wrap gap-3 text-xs">
-            <a href="https://solarpunk-guide-ecru.vercel.app" target="_blank" rel="noopener" className="text-text-muted hover:text-accent transition-colors">
+            <a href="https://solarpunk-game-wiki.vercel.app" target="_blank" rel="noopener" className="text-text-muted hover:text-accent transition-colors">
               Solarpunk Guide
             </a>
             <a href="https://menace-guide.vercel.app" target="_blank" rel="noopener" className="text-text-muted hover:text-accent transition-colors">

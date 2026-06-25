@@ -460,7 +460,7 @@ export default function HomePage() {
                 More Game Guides
               </h4>
               <div className="flex flex-wrap gap-4 text-[11px] font-mono">
-                <a href="https://solarpunk-guide-ecru.vercel.app" target="_blank" rel="noopener" className="text-text-muted hover:text-tactical-blue transition-colors">
+                <a href="https://solarpunk-game-wiki.vercel.app" target="_blank" rel="noopener" className="text-text-muted hover:text-tactical-blue transition-colors">
                   Solarpunk Guide
                 </a>
                 <a href="https://menace-guide.vercel.app" target="_blank" rel="noopener" className="text-text-muted hover:text-tactical-blue transition-colors">

@@ -446,6 +446,12 @@ export interface GuideUpdate {
 
 export const guideUpdates: GuideUpdate[] = [
   {
+    date: "2026-06-25",
+    title: "Xbox Series X|S Summer 2026 — Launch Window Confirmed",
+    slug: "xbox-summer-2026",
+    description: "AdHoc Studio confirms Dispatch will arrive on Xbox Series X|S and Microsoft Store this summer 2026, completing the platform lineup alongside PS5, PC, Switch, and mobile. The Xbox port will include all episodes and content updates at launch. First revealed at a March 2026 showcase, the Xbox version marks the final major platform expansion for the superhero workplace comedy. All guides on this site have been verified for cross-platform parity.",
+  },
+  {
     date: "2026-06-23",
     title: "Xbox Launch: Complete Coverage",
     slug: "xbox-launch",
