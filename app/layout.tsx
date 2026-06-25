@@ -32,6 +32,9 @@ export default function RootLayout({
         {/* Google Search Console verification */}
         <meta name="google-site-verification" content="4cd6cdf221ea7b0b" />
 
+        {/* Google AdSense */}
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8925824244664340" crossOrigin="anonymous" />
+
         {/* Google Analytics 4 */}
         <script async src={`https://www.googletagmanager.com/gtag/js?id=G-ET6778V62K`} />
         <script

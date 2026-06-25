@@ -462,6 +462,9 @@ export default function HomePage() {
                 <a href="https://olden-era-guide-tau.vercel.app" target="_blank" rel="noopener" className="text-text-muted hover:text-tactical-blue transition-colors">
                   Olden Era Guide
                 </a>
+                <a href="https://tabletop-tavern-guide.vercel.app" target="_blank" rel="noopener" className="text-text-muted hover:text-tactical-blue transition-colors">
+                  Tabletop Tavern Guide
+                </a>
               </div>
             </div>
 
