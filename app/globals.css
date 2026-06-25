@@ -1,117 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap');
 @import "tailwindcss";
 
-/* ─── Theme: CSS Custom Properties ──────────────────────────────── */
-/* These drive Tailwind v4 theme tokens via var() references */
-
-:root {
-  --color-bg: #FFF8F0;
-  --color-surface: #FFFFFF;
-  --color-surface-hover: #FFF0E0;
-  --color-text: #1A1A14;
-  --color-muted: #6B6B63;
-  --color-border: #E5E0D8;
-  --color-accent: #FF4500;
-  --color-accent-secondary: #FFD700;
-  --font-heading: "Bangers", "Bangers Fallback", cursive;
-  --font-body: "Inter", "Inter Fallback", sans-serif;
-  --font-mono: "JetBrains Mono", monospace;
-  --radius: 0.75rem;
-}
-
-.dark {
-  --color-bg: #0D0D0D;
-  --color-surface: #1A1A1A;
-  --color-surface-hover: #242424;
-  --color-text: #F5F5F0;
-  --color-muted: #888880;
-  --color-border: #2A2A2A;
-  --color-accent: #FF4500;
-  --color-accent-secondary: #FFD700;
-}
-
-/* ─── Tailwind v4 Theme Tokens ─────────────────────────────────── */
+/* ============================================
+   Template A: Tactical Command Center
+   Color System: Abyss Navy + Tactical Blue
+   Design: Linear-style precision, zero-radius,
+           grid-background, terminal accents.
+   Anti-AI: No gradients, no bento, no purple,
+            no Inter as heading font.
+   ============================================ */
 
 @theme {
-  --color-bg: var(--color-bg);
-  --color-surface: var(--color-surface);
-  --color-surface-hover: var(--color-surface-hover);
-  --color-text: var(--color-text);
-  --color-muted: var(--color-muted);
-  --color-border: var(--color-border);
-  --color-accent: var(--color-accent);
-  --color-accent-secondary: var(--color-accent-secondary);
-  --font-heading: var(--font-heading);
-  --font-body: var(--font-body);
-  --font-mono: var(--font-mono);
+  --color-abyss: #0d1117;
+  --color-abyss-light: #161b22;
+  --color-tactical-blue: #58a6ff;
+  --color-tactical-blue-dim: #388bfd;
+  --color-warning-orange: #db6d28;
+  --color-grid-line: #21262d;
+  --color-text-primary: #e6edf3;
+  --color-text-secondary: #8b949e;
+  --color-text-muted: #484f58;
+  --color-border-subtle: #30363d;
+  --color-terminal-green: #3fb950;
+  --color-terminal-red: #f85149;
+
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --animate-blink-cursor: blink-cursor 1s step-end infinite;
+  --animate-pulse-subtle: pulse-subtle 2s ease-in-out infinite;
+
+  @keyframes blink-cursor {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+
+  @keyframes pulse-subtle {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
 }
 
-/* ─── Base Styles ──────────────────────────────────────────────── */
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
 
-body {
-  background-color: var(--color-bg);
-  color: var(--color-text);
-  font-family: var(--font-body);
-}
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 
-/* Stat bar animation */
-.stat-bar-fill {
-  transition: width 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-}
+  body {
+    @apply bg-abyss text-text-primary font-body antialiased;
+  }
 
-/* Scrollbar */
-::-webkit-scrollbar {
-  width: 6px;
-}
-::-webkit-scrollbar-track {
-  background: var(--color-bg);
-}
-::-webkit-scrollbar-thumb {
-  background: var(--color-border);
-  border-radius: 3px;
-}
-
-/* Selection */
-::selection {
-  background: var(--color-accent);
-  color: white;
-}
-
-/* Smooth focus ring */
-*:focus-visible {
-  outline: 2px solid var(--color-accent);
-  outline-offset: 2px;
-  border-radius: 4px;
+  /* Scrollbar - tactical thin */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #30363d;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #484f58;
+  }
 }
 
-/* Bento card hover lift */
-.bento-card {
-  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-}
-.bento-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(255, 69, 0, 0.08);
-}
-.dark .bento-card:hover {
-  box-shadow: 0 8px 30px rgba(255, 69, 0, 0.12);
+@layer components {
+  /* Terminal cursor blinker */
+  .cursor-blink::after {
+    content: '_';
+    @apply text-tactical-blue animate-blink-cursor;
+  }
+
+  /* Data table row hover */
+  .data-row {
+    @apply border-t border-grid-line transition-colors duration-150;
+  }
+  .data-row:hover {
+    @apply bg-abyss-light;
+  }
+
+  /* Stat card - compact, no rounded corners */
+  .stat-card {
+    @apply bg-abyss-light border border-border-subtle p-4;
+  }
+
+  /* Sidebar link */
+  .sidebar-link {
+    @apply flex items-center gap-3 px-3 py-2 text-sm text-text-secondary
+           transition-colors duration-150 hover:text-text-primary
+           border-l-2 border-transparent hover:border-tactical-blue;
+  }
+  .sidebar-link.active {
+    @apply text-tactical-blue border-l-2 border-tactical-blue bg-tactical-blue/5;
+  }
+
+  /* Tag / badge */
+  .tag {
+    @apply inline-flex items-center px-2 py-0.5 text-xs font-mono
+           border border-border-subtle text-text-secondary;
+  }
+  .tag-warn {
+    @apply inline-flex items-center px-2 py-0.5 text-xs font-mono
+           border text-warning-orange border-warning-orange/30 bg-warning-orange/10;
+  }
+  .tag-info {
+    @apply inline-flex items-center px-2 py-0.5 text-xs font-mono
+           border text-tactical-blue border-tactical-blue/30 bg-tactical-blue/10;
+  }
+  .tag-success {
+    @apply inline-flex items-center px-2 py-0.5 text-xs font-mono
+           border text-terminal-green border-terminal-green/30 bg-terminal-green/10;
+  }
+
+  /* Section divider - hairline */
+  .section-divider {
+    @apply border-t border-grid-line my-8;
+  }
+
+  /* Terminal-style code block */
+  .terminal-block {
+    @apply bg-[#0a0e13] border border-border-subtle p-4 font-mono text-sm text-terminal-green;
+  }
 }
 
-/* Comic-style accent border */
-.accent-border {
-  position: relative;
-}
-.accent-border::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background: linear-gradient(90deg, var(--color-accent), var(--color-accent-secondary));
-  border-radius: 0 0 var(--radius) var(--radius);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-}
-.accent-border:hover::after {
-  transform: scaleX(1);
+@layer utilities {
+  /* For the grid background on content area */
+  .bg-tactical-grid {
+    background-image:
+      linear-gradient(rgba(48,54,61,0.25) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(48,54,61,0.25) 1px, transparent 1px);
+    background-size: 32px 32px;
+  }
 }

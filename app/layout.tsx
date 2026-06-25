@@ -1,65 +1,52 @@
-import type { Metadata } from "next";
-import Script from "next/script";
-import "./globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import { SITE_TITLE, SITE_DESCRIPTION, SITE_URL } from "@/lib/data";
-
-const GA_ID = "G-ET6778V62K";
+import type { Metadata } from 'next';
+import './globals.css';
 
 export const metadata: Metadata = {
   title: {
-    default: SITE_TITLE,
-    template: `%s | Dispatch Guide`,
+    default: 'Dispatch Guide — Complete Hero Stats, Builds & Walkthrough',
+    template: '%s | Dispatch Guide',
   },
-  description: SITE_DESCRIPTION,
-  metadataBase: new URL(SITE_URL),
+  description:
+    'The ultimate Dispatch game guide: all 6 Z-Team hero stats, best builds, pairings, episode walkthroughs, endings, and tips. Covering PS5, PC, Switch, and Xbox releases.',
+  metadataBase: new URL('https://dispatch-guide.com'),
   openGraph: {
-    title: SITE_TITLE,
-    description: SITE_DESCRIPTION,
-    type: "website",
-    siteName: "Dispatch Guide",
+    title: 'Dispatch Guide',
+    description:
+      'The ultimate Dispatch game guide: all 6 Z-Team hero stats, best builds, pairings, episode walkthroughs, endings, and tips.',
+    type: 'website',
+    siteName: 'Dispatch Guide',
+  },
+  verification: {
+    google: '4cd6cdf221ea7b0b',
   },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html lang="en" className="font-heading-bangers font-body-inter font-mono-jetbrains">
+    <html lang="en">
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+        {/* Google Search Console verification */}
+        <meta name="google-site-verification" content="4cd6cdf221ea7b0b" />
+
+        {/* Google Analytics 4 */}
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=G-ET6778V62K`} />
         <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function() {
-                try {
-                  var stored = localStorage.getItem('dispatch-theme');
-                  if (stored === 'dark' || (!stored && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-                    document.documentElement.classList.add('dark');
-                  }
-                } catch(e) {}
-              })();
-            `,
-          }}
-        />
-      </head>
-      <body className="min-h-screen flex flex-col antialiased bg-bg text-text">
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
-        <Script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} />
-        <Script
-          id="ga-init"
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', '${GA_ID}');
+              gtag('config', 'G-ET6778V62K');
             `,
           }}
         />
+      </head>
+      <body className="font-body min-h-screen flex flex-col">
+        {children}
       </body>
     </html>
   );
