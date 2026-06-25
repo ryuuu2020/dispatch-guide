@@ -439,16 +439,7 @@ export default function HomePage() {
                   Terms
                 </a>
               </div>
-              <div className="flex items-center gap-4">
-                <a
-                  href="https://afdian.com/a/gameguidehub"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[11px] font-mono text-tactical-blue hover:text-tactical-blue-dim transition-colors"
-                >
-                  SUPPORT ON AFDIAN
-                </a>
-              </div>
+
             </div>
 
             {/* Platforms line */}
@@ -481,7 +472,7 @@ export default function HomePage() {
               </h4>
               <div className="flex flex-wrap gap-4 text-[11px] font-mono">
                 <a href="https://afdian.com/a/gameguidehub" target="_blank" rel="noopener" className="text-text-muted hover:text-tactical-blue transition-colors">
-                  ❤️ Support Us on Afdian
+                  ❤️ Support Us
                 </a>
                 <a href="https://amazon.com/s?k=gaming+gear&tag=gameguidehub-20" target="_blank" rel="noopener" className="text-text-muted hover:text-tactical-blue transition-colors">
                   Shop Gaming Gear

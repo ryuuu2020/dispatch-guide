@@ -35,7 +35,7 @@ export default function Footer() {
           <h4 className="text-xs font-semibold text-text-muted mb-2 tracking-wide uppercase">Support This Guide</h4>
           <div className="flex flex-wrap gap-3 text-xs">
             <a href="https://afdian.com/a/gameguidehub" target="_blank" rel="noopener" className="text-text-muted hover:text-accent transition-colors inline-flex items-center gap-1">
-              ❤️ Support Us on Afdian
+              ❤️ Support Us
             </a>
             <a href="https://amazon.com/s?k=gaming+gear&tag=gameguidehub-20" target="_blank" rel="noopener" className="text-text-muted hover:text-accent transition-colors inline-flex items-center gap-1">
               🎮 Shop Gaming Gear
