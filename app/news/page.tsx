@@ -15,6 +15,13 @@ interface NewsItem {
 }
 
 const newsItems: NewsItem[] = [
+      {
+    date: "2026-06-26",
+    title: "Patch 1.0.17470 Stability Fixes — Plus Clair Obscur Bundle",
+    tag: "Update",
+    excerpt:
+      "AdHoc Studio shipped Dispatch patch 1.0.17470 on June 17, focusing on stability improvements and minor bug fixes. Steam Deck players should notice smoother cutscene transitions — a long-standing issue where episode-5 flashback sequences would stutter on handheld hardware has been addressed. The patch also fixes a rare softlock when assigning Flambae and Invisigal to the same dispatch mission during episode 3's warehouse raid. In cross-promotion news, Dispatch is now bundled with Sandfall Interactive's Clair Obscur: Expedition 33 on Steam — two narrative-driven tactical games paired at a 15% discount through the Steam Summer Sale. For existing players, there is no new story content in this patch, but AdHoc's social media has been teasing 'something bigger' for late summer 2026.",
+  },
   {
     date: "2026-06-25",
     title: "Dispatch Hits 85% Positive on Steam — Player Reception Analysis After 8 Months",
