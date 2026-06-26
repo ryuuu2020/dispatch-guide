@@ -1,146 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;510;590&display=swap');
 @import "tailwindcss";
 
 /* ============================================
-   Template A: Tactical Command Center
-   Color System: Abyss Navy + Tactical Blue
-   Design: Linear-style precision, zero-radius,
-           grid-background, terminal accents.
-   Anti-AI: No gradients, no bento, no purple,
-            no Inter as heading font.
+   Design: linear.app
+   Generated from awesome-design-md
    ============================================ */
 
 @theme {
-  --color-abyss: #0d1117;
-  --color-abyss-light: #161b22;
-  --color-tactical-blue: #58a6ff;
-  --color-tactical-blue-dim: #388bfd;
-  --color-warning-orange: #db6d28;
-  --color-grid-line: #21262d;
-  --color-text-primary: #e6edf3;
-  --color-text-secondary: #8b949e;
-  --color-text-muted: #484f58;
-  --color-border-subtle: #30363d;
-  --color-terminal-green: #3fb950;
-  --color-terminal-red: #f85149;
-
-  --font-display: "Space Grotesk", sans-serif;
-  --font-body: "Inter", sans-serif;
-  --font-mono: "JetBrains Mono", monospace;
-
-  --animate-blink-cursor: blink-cursor 1s step-end infinite;
-  --animate-pulse-subtle: pulse-subtle 2s ease-in-out infinite;
-
-  @keyframes blink-cursor {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
-  }
-
-  @keyframes pulse-subtle {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.5; }
-  }
+  --color-abyss: #08090a;
+  --color-abyss-light: #0f1011;
+  --color-abyss-elevated: #191a1b;
+  --color-accent-primary: #5e6ad2;
+  --color-accent-primary-dim: #4434d4;
+  --color-accent-primary-glow: rgba(94,106,210,0.15);
+  --color-accent-secondary: #7170ff;
+  --color-text-primary: #f7f8f8;
+  --color-text-secondary: #d0d6e0;
+  --color-text-muted: #8a8f98;
+  --color-border-subtle: rgba(255,255,255,0.05);
+  --color-border-strong: rgba(255,255,255,0.08);
 }
 
-@layer base {
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-  }
-
-  html {
-    scroll-behavior: smooth;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-
-  body {
-    @apply bg-abyss text-text-primary font-body antialiased;
-  }
-
-  /* Scrollbar - tactical thin */
-  ::-webkit-scrollbar {
-    width: 6px;
-    height: 6px;
-  }
-  ::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: #30363d;
-    border-radius: 3px;
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background: #484f58;
-  }
+/* Body defaults */
+body {
+  background-color: #08090a;
+  color: #f7f8f8;
+  font-family: 'Inter Variable', system-ui, sans-serif;
 }
 
-@layer components {
-  /* Terminal cursor blinker */
-  .cursor-blink::after {
-    content: '_';
-    @apply text-tactical-blue animate-blink-cursor;
-  }
-
-  /* Data table row hover */
-  .data-row {
-    @apply border-t border-grid-line transition-colors duration-150;
-  }
-  .data-row:hover {
-    @apply bg-abyss-light;
-  }
-
-  /* Stat card - compact, no rounded corners */
-  .stat-card {
-    @apply bg-abyss-light border border-border-subtle p-4;
-  }
-
-  /* Sidebar link */
-  .sidebar-link {
-    @apply flex items-center gap-3 px-3 py-2 text-sm text-text-secondary
-           transition-colors duration-150 hover:text-text-primary
-           border-l-2 border-transparent hover:border-tactical-blue;
-  }
-  .sidebar-link.active {
-    @apply text-tactical-blue border-l-2 border-tactical-blue bg-tactical-blue/5;
-  }
-
-  /* Tag / badge */
-  .tag {
-    @apply inline-flex items-center px-2 py-0.5 text-xs font-mono
-           border border-border-subtle text-text-secondary;
-  }
-  .tag-warn {
-    @apply inline-flex items-center px-2 py-0.5 text-xs font-mono
-           border text-warning-orange border-warning-orange/30 bg-warning-orange/10;
-  }
-  .tag-info {
-    @apply inline-flex items-center px-2 py-0.5 text-xs font-mono
-           border text-tactical-blue border-tactical-blue/30 bg-tactical-blue/10;
-  }
-  .tag-success {
-    @apply inline-flex items-center px-2 py-0.5 text-xs font-mono
-           border text-terminal-green border-terminal-green/30 bg-terminal-green/10;
-  }
-
-  /* Section divider - hairline */
-  .section-divider {
-    @apply border-t border-grid-line my-8;
-  }
-
-  /* Terminal-style code block */
-  .terminal-block {
-    @apply bg-[#0a0e13] border border-border-subtle p-4 font-mono text-sm text-terminal-green;
-  }
+::selection {
+  background-color: var(--color-accent-primary);
+  color: #08090a;
 }
 
-@layer utilities {
-  /* For the grid background on content area */
-  .bg-tactical-grid {
-    background-image:
-      linear-gradient(rgba(48,54,61,0.25) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(48,54,61,0.25) 1px, transparent 1px);
-    background-size: 32px 32px;
-  }
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.08);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8a8f98;
 }
