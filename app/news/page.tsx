@@ -15,6 +15,13 @@ interface NewsItem {
 }
 
 const newsItems: NewsItem[] = [
+  {
+    date: "2026-06-27",
+    title: "Dispatch Steam Summer Sale — 20% Off and 85% Positive Milestone",
+    tag: "Community",
+    excerpt:
+      "Dispatch is currently 20% off during the Steam Summer Sale, marking the deepest discount since the game's October 2025 launch. If you have been on the fence, this is the best price yet for AdHoc Studio's superhero workplace comedy. The sale coincides with a notable milestone: Dispatch has crossed 85% positive on Steam with over 3,000 reviews, a strong reception for a narrative-driven dispatch management game. Community sentiment analysis shows players consistently praise the writing quality (frequently compared favorably to Telltale's peak era), the surprising depth of the team dispatch assignment system, and standout voice performances for Invisigal and Malevola. The most common criticism remains episode length variance in the mid-game. For existing owners, the Clair Obscur: Expedition 33 bundle is still available at a combined 15% discount — two narrative tactical games paired together. AdHoc Studio continues to tease 'something bigger' for late summer 2026, though no official DLC announcement has been made yet.",
+  },
       {
     date: "2026-06-26",
     title: "Patch 1.0.17470 Stability Fixes — Plus Clair Obscur Bundle",
