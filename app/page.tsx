@@ -41,6 +41,50 @@ export default function HomePage() {
               className="w-full h-48 lg:h-64 object-cover rounded border border-border-subtle"
             />
 
+            {/* ===== Hero Section ===== */}
+            <section>
+              <div className="bg-abyss-light border border-border-subtle p-6 lg:p-8">
+                <div className="inline-block mb-4 px-3 py-1 border border-warning-orange/30 bg-warning-orange/5">
+                  <span className="text-xs font-mono text-warning-orange">
+                    Xbox Summer 2026 — Now Available on All Platforms
+                  </span>
+                </div>
+                <h1 className="font-display text-3xl lg:text-4xl font-bold tracking-tight text-text-primary leading-tight">
+                  Dispatch <span className="text-tactical-blue">Guide</span>
+                </h1>
+                <p className="mt-4 text-sm text-text-secondary max-w-2xl leading-relaxed">
+                  Complete hero stats, best builds, episode walkthroughs, and all four endings for AdHoc
+                  Studio&apos;s superhero workplace comedy. Your Z-Team deserves a competent dispatcher.
+                </p>
+                <div className="mt-6 flex flex-wrap gap-3">
+                  <Link
+                    href="/characters"
+                    className="px-4 py-2 text-sm font-mono font-medium text-abyss bg-tactical-blue hover:bg-tactical-blue-dim transition-colors"
+                  >
+                    BROWSE HEROES
+                  </Link>
+                  <Link
+                    href="/builds"
+                    className="px-4 py-2 text-sm font-mono text-text-secondary border border-border-subtle hover:text-text-primary hover:border-text-muted transition-colors"
+                  >
+                    BEST BUILDS
+                  </Link>
+                  <Link
+                    href="/episodes"
+                    className="px-4 py-2 text-sm font-mono text-text-secondary border border-border-subtle hover:text-text-primary hover:border-text-muted transition-colors"
+                  >
+                    EPISODE GUIDE
+                  </Link>
+                  <Link
+                    href="/news"
+                    className="px-4 py-2 text-sm font-mono text-text-secondary border border-border-subtle hover:text-text-primary hover:border-text-muted transition-colors"
+                  >
+                    NEWS
+                  </Link>
+                </div>
+              </div>
+            </section>
+
             {/* ===== Section 1: Top Featured Heroes ===== */}
             <section>
               <div className="flex items-center justify-between mb-4">
@@ -182,50 +226,6 @@ export default function HomePage() {
               <p>studio: AdHoc Studio (ex-Telltale)</p>
               <p className="cursor-blink">ready</p>
             </div>
-
-            {/* ===== Hero Section ===== */}
-            <section>
-              <div className="bg-abyss-light border border-border-subtle p-6 lg:p-8">
-                <div className="inline-block mb-4 px-3 py-1 border border-warning-orange/30 bg-warning-orange/5">
-                  <span className="text-xs font-mono text-warning-orange">
-                    Xbox Summer 2026 — Now Available on All Platforms
-                  </span>
-                </div>
-                <h1 className="font-display text-3xl lg:text-4xl font-bold tracking-tight text-text-primary leading-tight">
-                  Dispatch <span className="text-tactical-blue">Guide</span>
-                </h1>
-                <p className="mt-4 text-sm text-text-secondary max-w-2xl leading-relaxed">
-                  Complete hero stats, best builds, episode walkthroughs, and all four endings for AdHoc
-                  Studio&apos;s superhero workplace comedy. Your Z-Team deserves a competent dispatcher.
-                </p>
-                <div className="mt-6 flex flex-wrap gap-3">
-                  <Link
-                    href="/characters"
-                    className="px-4 py-2 text-sm font-mono font-medium text-abyss bg-tactical-blue hover:bg-tactical-blue-dim transition-colors"
-                  >
-                    BROWSE HEROES
-                  </Link>
-                  <Link
-                    href="/builds"
-                    className="px-4 py-2 text-sm font-mono text-text-secondary border border-border-subtle hover:text-text-primary hover:border-text-muted transition-colors"
-                  >
-                    BEST BUILDS
-                  </Link>
-                  <Link
-                    href="/episodes"
-                    className="px-4 py-2 text-sm font-mono text-text-secondary border border-border-subtle hover:text-text-primary hover:border-text-muted transition-colors"
-                  >
-                    EPISODE GUIDE
-                  </Link>
-                  <Link
-                    href="/news"
-                    className="px-4 py-2 text-sm font-mono text-text-secondary border border-border-subtle hover:text-text-primary hover:border-text-muted transition-colors"
-                  >
-                    NEWS
-                  </Link>
-                </div>
-              </div>
-            </section>
 
             {/* ===== FAQ ===== */}
             <section>

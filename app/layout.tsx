@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import './globals.css';
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: {
@@ -48,18 +49,14 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="google-site-verification" content="4cd6cdf221ea7b0b" />
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8925824244664340" crossOrigin="anonymous" />
-        <script async src={`https://www.googletagmanager.com/gtag/js?id=G-ET6778V62K`} />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-ET6778V62K');
-            `,
-          }}
-        />
+        <Script strategy="lazyOnload" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8925824244664340" crossOrigin="anonymous" />
+        <Script strategy="lazyOnload" src="https://www.googletagmanager.com/gtag/js?id=G-ET6778V62K" />
+        <Script strategy="lazyOnload" id="gtag-init">
+              {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-ET6778V62K');`}
+            </Script>
       </head>
       <body className="font-body min-h-screen flex flex-col">
         {/* ── Sidebar + Main wrapper ── */}
@@ -67,14 +64,14 @@ export default function RootLayout({
           {/* ===== Sidebar ===== */}
           <aside className="hidden lg:flex flex-col w-56 bg-[#0a0e13] border-r border-border-subtle shrink-0">
             {/* Logo */}
-            <a href="/" className="flex items-center gap-3 px-4 h-14 border-b border-border-subtle hover:bg-white/5 transition-colors">
+            <Link href="/" className="flex items-center gap-3 px-4 h-14 border-b border-border-subtle hover:bg-white/5 transition-colors">
               <div className="w-7 h-7 bg-tactical-blue flex items-center justify-center">
                 <span className="text-[10px] font-mono font-bold text-abyss">CMD</span>
               </div>
               <span className="font-display text-sm font-semibold tracking-tight text-text-primary">
                 Dispatch
               </span>
-            </a>
+            </Link>
 
             {/* Navigation */}
             <nav className="py-4 flex flex-col gap-0.5 flex-1">
@@ -130,9 +127,9 @@ export default function RootLayout({
                 <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
                   <div className="flex items-center gap-4 text-[11px] font-mono text-text-muted">
                     <span>&copy; {new Date().getFullYear()} Dispatch Guide — Unofficial fan guide</span>
-                    <a href="/about" className="hover:text-text-secondary transition-colors">About</a>
-                    <a href="/privacy" className="hover:text-text-secondary transition-colors">Privacy</a>
-                    <a href="/terms" className="hover:text-text-secondary transition-colors">Terms</a>
+                    <Link href="/about" className="hover:text-text-secondary transition-colors">About</Link>
+                    <Link href="/privacy" className="hover:text-text-secondary transition-colors">Privacy</Link>
+                    <Link href="/terms" className="hover:text-text-secondary transition-colors">Terms</Link>
                   </div>
                 </div>
                 <p className="text-center text-[10px] font-mono text-text-muted mt-3">
