@@ -29,17 +29,22 @@ function getTierColor(tier: string): string {
   }
 }
 
+import Image from 'next/image';
+
 export default function HomePage() {
   return (
     <div className="p-4 lg:p-6">
       <div className="max-w-6xl mx-auto space-y-6">
 
             {/* ===== Hero Banner ===== */}
-            <img
-              src="/hero.png"
-              alt="Dispatch"
-              className="w-full h-48 lg:h-64 object-cover rounded border border-border-subtle"
-            />
+            <div className="relative w-full h-48 lg:h-64 rounded border border-border-subtle overflow-hidden">
+              <Image
+                src="/hero.png"
+                alt="Dispatch"
+                fill
+                className="object-cover"
+              />
+            </div>
 
             {/* ===== Hero Section ===== */}
             <section>
