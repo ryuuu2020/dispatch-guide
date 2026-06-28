@@ -27,6 +27,12 @@ export async function generateMetadata({
 }
 
 // ─── Page ──────────────────────────────────────────────────────
+export const metadata = {
+  title: "Dispatch {character.name} — Complete Guide (2026)",
+  description:
+    "{character.tagline}",
+};
+
 
 export default async function CharacterPage({
   params,

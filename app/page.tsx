@@ -30,6 +30,13 @@ function getTierColor(tier: string): string {
 }
 
 import Image from 'next/image';
+export const metadata = {
+  title: "Dispatch Dispatch Guide — Complete Guide (2026)",
+  description:
+    "Complete hero stats, best builds, episode walkthroughs, and all four endings for AdHoc
+                  Studio&apos;s superhero workplace comedy. Your Z-Team deserves a competent dispatcher.",
+};
+
 
 export default function HomePage() {
   return (
