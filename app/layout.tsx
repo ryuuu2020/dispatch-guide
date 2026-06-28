@@ -57,6 +57,15 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-ET6778V62K');`}
             </Script>
+      
+        {/* JSON-LD Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={
+            __html: `{"@context": "https://schema.org", "@type": "WebSite", "name": "Dispatch Guide", "url": "https://dispatch-guide-sigma.vercel.app"}`
+          }
+        />
+
       </head>
       <body className="font-body min-h-screen flex flex-col">
         {/* ── Sidebar + Main wrapper ── */}
@@ -161,6 +170,15 @@ gtag('config', 'G-ET6778V62K');`}
                   </div>
                 </div>
               </div>
+            
+              {/* E-E-A-T: Sources & Last Updated */}
+              <div className="mt-4 pt-4 border-t border-clay/30">
+                <p className="font-body text-xs text-stone text-center">
+                  <strong>Sources:</strong> All guides are based on the <a href="https://store.steampowered.com/app/2592160/" target="_blank" rel="noopener noreferrer" className="text-terracotta hover:underline">Steam patch notes</a>, community testing, and gameplay experience.
+                </p>
+                <p className="font-body text-xs text-stone text-center mt-1">Last updated: June 2026</p>
+              </div>
+
             </footer>
           </div>
         </div>
