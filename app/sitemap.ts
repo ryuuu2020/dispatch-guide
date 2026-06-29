@@ -3,7 +3,7 @@ import { characters } from "@/lib/data";
 
 export const dynamic = "force-static";
 
-const BASE_URL = "https://dispatch-guide.com";
+const BASE_URL = "https://dispatch-guide-sigma.vercel.app";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
