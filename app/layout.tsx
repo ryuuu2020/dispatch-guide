@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
   description:
     'The ultimate Dispatch game guide: all 6 Z-Team hero stats, best builds, pairings, episode walkthroughs, endings, and tips. Covering PS5, PC, Switch, and Xbox releases.',
-  metadataBase: new URL('https://dispatch-guide.com'),
+  metadataBase: new URL('https://dispatch-guide-sigma.vercel.app'),
   openGraph: {
     title: 'Dispatch Guide',
     description:
@@ -61,9 +61,9 @@ gtag('config', 'G-ET6778V62K');`}
         {/* JSON-LD Structured Data */}
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={
+          dangerouslySetInnerHTML={{
             __html: `{"@context": "https://schema.org", "@type": "WebSite", "name": "Dispatch Guide", "url": "https://dispatch-guide-sigma.vercel.app"}`
-          }
+          }}
         />
 
       </head>

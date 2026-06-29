@@ -1,11 +1,11 @@
-'use client';
-
 import Link from 'next/link';
 import { guideUpdates } from '@/lib/data';
+import Image from 'next/image';
 
-/* ============================================
-   Dispatch Guide — Tactical Command Center
-   ============================================ */
+export const metadata = {
+  title: "Dispatch Guide — Complete Hero Stats, Builds & Walkthrough (2026)",
+  description: "Complete hero stats, best builds, episode walkthroughs, and all endings for AdHoc Studio's superhero workplace comedy.",
+};
 
 const HERO_TABLE = [
   { tier: 'S', name: 'Flambe', role: 'Damage Dealer', stat: 'Combat 5★', slug: 'flambe' },
@@ -28,14 +28,6 @@ function getTierColor(tier: string): string {
     default: return 'text-text-secondary';
   }
 }
-
-import Image from 'next/image';
-export const metadata = {
-  title: "Dispatch Dispatch Guide — Complete Guide (2026)",
-  description:
-    "Complete hero stats, best builds, episode walkthroughs, and all four endings for AdHoc
-                  Studio&apos;s superhero workplace comedy. Your Z-Team deserves a competent dispatcher.",
-};
 
 
 export default function HomePage() {
