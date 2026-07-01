@@ -1,6 +1,28 @@
 {
   "cleanUrls": true,
   "headers": [
-    { "source": "/ads.txt", "headers": [{ "key": "Content-Type", "value": "text/plain" }] }
-  ]
+    {
+      "source": "/ads.txt",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/plain"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "dispatch-guide-sigma.vercel.app"
+        }
+      ],
+      "destination": "https://dispatch.gguidehub.com/$1",
+      "permanent": true
+    }
+  ],
+  "version": 2
 }

@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import './globals.css';
 import Script from "next/script";
+import SchemaMarkup from '@/shared/SchemaMarkup';
+
 
 export const metadata: Metadata = {
   title: {
@@ -10,7 +12,7 @@ export const metadata: Metadata = {
   },
   description:
     'The ultimate Dispatch game guide: all 6 Z-Team hero stats, best builds, pairings, episode walkthroughs, endings, and tips. Covering PS5, PC, Switch, and Xbox releases.',
-  metadataBase: new URL('https://dispatch-guide-sigma.vercel.app'),
+  metadataBase: new URL("https://dispatch.gguidehub.com"),
   openGraph: {
     title: 'Dispatch Guide',
     description:
